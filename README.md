@@ -7,7 +7,8 @@ This is an an iOS app to locate parks close to the user within Bexar County, Tex
 The following functionality is completed:
 
 - [x] User can view home screen with parks categorized by park administrator.
-- [x] User can select to view the parks as a list. 
+- [x] User can select to view the parks as a list.
+- [x] User can toggle to view only featured parks on the list.
 - [x] User can select a park from the home screen or list. 
 - [x] User can view the details of the park from the park detail screen.
 - [x] User can view the address, lat/lon, description and amenities of each park. 
