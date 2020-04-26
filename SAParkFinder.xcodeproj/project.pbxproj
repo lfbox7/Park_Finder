@@ -3,29 +3,67 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B8822B1124427FAB00ABA349 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8822B1024427FAB00ABA349 /* AppDelegate.swift */; };
-		B8822B1324427FAB00ABA349 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8822B1224427FAB00ABA349 /* SceneDelegate.swift */; };
+		207640387C6D797C9DD247F2 /* Pods_SAParkFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F483FE0A3BC79A6C08B4F3F7 /* Pods_SAParkFinder.framework */; };
+		B8147C7D24552D230076AFA0 /* ParkListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8147C7C24552D230076AFA0 /* ParkListRowView.swift */; };
+		B8147C852455D90A0076AFA0 /* DirectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8147C842455D90A0076AFA0 /* DirectionsView.swift */; };
 		B8822B1624427FAB00ABA349 /* SAParkFinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B8822B1424427FAB00ABA349 /* SAParkFinder.xcdatamodeld */; };
-		B8822B1824427FAB00ABA349 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8822B1724427FAB00ABA349 /* ContentView.swift */; };
 		B8822B1A24427FAD00ABA349 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8822B1924427FAD00ABA349 /* Assets.xcassets */; };
 		B8822B1D24427FAD00ABA349 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8822B1C24427FAD00ABA349 /* Preview Assets.xcassets */; };
 		B8822B2024427FAD00ABA349 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8822B1E24427FAD00ABA349 /* LaunchScreen.storyboard */; };
+		B8822B2824427FDC00ABA349 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8822B2724427FDC00ABA349 /* GoogleService-Info.plist */; };
+		B8E7A1192442B580009AED9D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E7A1172442B57F009AED9D /* User.swift */; };
+		B8E7A1212442B5F5009AED9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E7A1202442B5F4009AED9D /* AppDelegate.swift */; };
+		B8E7A1232442B603009AED9D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E7A1222442B603009AED9D /* SceneDelegate.swift */; };
+		B8E7A1372442BE70009AED9D /* Park.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E7A1362442BE70009AED9D /* Park.swift */; };
+		B8E7A1392444BA80009AED9D /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E7A1382444BA80009AED9D /* MapView.swift */; };
+		B8E7A13B2444BB45009AED9D /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E7A13A2444BB45009AED9D /* LocationManager.swift */; };
+		B8E7A15124465F84009AED9D /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = B8E7A15024465F84009AED9D /* SDWebImageSwiftUI */; };
+		B8E7A15C2448C9B1009AED9D /* FirebaseReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E7A15B2448C9B1009AED9D /* FirebaseReference.swift */; };
+		B8E7A15E244BD971009AED9D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E7A15D244BD971009AED9D /* Constants.swift */; };
+		B8E7A160244BE882009AED9D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E7A15F244BE882009AED9D /* HomeView.swift */; };
+		B8E7A162244BF8B2009AED9D /* ParkHomeRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E7A161244BF8B2009AED9D /* ParkHomeRowView.swift */; };
+		B8E7A164244BFBC2009AED9D /* ParkItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E7A163244BFBC2009AED9D /* ParkItemView.swift */; };
+		B8E7A166244CCAE8009AED9D /* ParkListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E7A165244CCAE8009AED9D /* ParkListener.swift */; };
+		B8E7A16B244CECD1009AED9D /* MapDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E7A168244CECD0009AED9D /* MapDetailView.swift */; };
+		B8E7A16C244CECD1009AED9D /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E7A169244CECD0009AED9D /* CircleImage.swift */; };
+		B8E7A172244CF109009AED9D /* ParkListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E7A171244CF109009AED9D /* ParkListView.swift */; };
+		B8E7A174244CF197009AED9D /* ParkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E7A173244CF197009AED9D /* ParkDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		32C43193056D6DCF002D5633 /* Pods-SAParkFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAParkFinder.release.xcconfig"; path = "Target Support Files/Pods-SAParkFinder/Pods-SAParkFinder.release.xcconfig"; sourceTree = "<group>"; };
+		921D85921B22B3C684925B0F /* Pods-SAParkFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAParkFinder.debug.xcconfig"; path = "Target Support Files/Pods-SAParkFinder/Pods-SAParkFinder.debug.xcconfig"; sourceTree = "<group>"; };
+		B8147C7B245529840076AFA0 /* San Antonio.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "San Antonio.gpx"; sourceTree = "<group>"; };
+		B8147C7C24552D230076AFA0 /* ParkListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkListRowView.swift; sourceTree = "<group>"; };
+		B8147C842455D90A0076AFA0 /* DirectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionsView.swift; sourceTree = "<group>"; };
 		B8822B0D24427FAB00ABA349 /* SAParkFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SAParkFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B8822B1024427FAB00ABA349 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B8822B1224427FAB00ABA349 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B8822B1524427FAB00ABA349 /* SAParkFinder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SAParkFinder.xcdatamodel; sourceTree = "<group>"; };
-		B8822B1724427FAB00ABA349 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B8822B1924427FAD00ABA349 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8822B1C24427FAD00ABA349 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B8822B1F24427FAD00ABA349 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B8822B2124427FAD00ABA349 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8822B2724427FDC00ABA349 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B8E7A1172442B57F009AED9D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B8E7A1202442B5F4009AED9D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B8E7A1222442B603009AED9D /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B8E7A1362442BE70009AED9D /* Park.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Park.swift; sourceTree = "<group>"; };
+		B8E7A1382444BA80009AED9D /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		B8E7A13A2444BB45009AED9D /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		B8E7A15B2448C9B1009AED9D /* FirebaseReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseReference.swift; sourceTree = "<group>"; };
+		B8E7A15D244BD971009AED9D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B8E7A15F244BE882009AED9D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B8E7A161244BF8B2009AED9D /* ParkHomeRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkHomeRowView.swift; sourceTree = "<group>"; };
+		B8E7A163244BFBC2009AED9D /* ParkItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkItemView.swift; sourceTree = "<group>"; };
+		B8E7A165244CCAE8009AED9D /* ParkListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkListener.swift; sourceTree = "<group>"; };
+		B8E7A168244CECD0009AED9D /* MapDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapDetailView.swift; sourceTree = "<group>"; };
+		B8E7A169244CECD0009AED9D /* CircleImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		B8E7A171244CF109009AED9D /* ParkListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkListView.swift; sourceTree = "<group>"; };
+		B8E7A173244CF197009AED9D /* ParkDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkDetailView.swift; sourceTree = "<group>"; };
+		F483FE0A3BC79A6C08B4F3F7 /* Pods_SAParkFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SAParkFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +71,48 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8E7A15124465F84009AED9D /* SDWebImageSwiftUI in Frameworks */,
+				207640387C6D797C9DD247F2 /* Pods_SAParkFinder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B71DCD0EFF2AEE78FE2CA9A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F483FE0A3BC79A6C08B4F3F7 /* Pods_SAParkFinder.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2BCC67C6DB95CF63C1C432BB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				921D85921B22B3C684925B0F /* Pods-SAParkFinder.debug.xcconfig */,
+				32C43193056D6DCF002D5633 /* Pods-SAParkFinder.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B8147C832455D8F00076AFA0 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				B8E7A1382444BA80009AED9D /* MapView.swift */,
+				B8147C842455D90A0076AFA0 /* DirectionsView.swift */,
+			);
+			path = Maps;
+			sourceTree = "<group>";
+		};
 		B8822B0424427FAB00ABA349 = {
 			isa = PBXGroup;
 			children = (
+				B8147C7B245529840076AFA0 /* San Antonio.gpx */,
 				B8822B0F24427FAB00ABA349 /* SAParkFinder */,
 				B8822B0E24427FAB00ABA349 /* Products */,
+				2BCC67C6DB95CF63C1C432BB /* Pods */,
+				0B71DCD0EFF2AEE78FE2CA9A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +127,13 @@
 		B8822B0F24427FAB00ABA349 /* SAParkFinder */ = {
 			isa = PBXGroup;
 			children = (
-				B8822B1024427FAB00ABA349 /* AppDelegate.swift */,
-				B8822B1224427FAB00ABA349 /* SceneDelegate.swift */,
-				B8822B1724427FAB00ABA349 /* ContentView.swift */,
+				B8822B2924427FE300ABA349 /* App */,
 				B8822B1924427FAD00ABA349 /* Assets.xcassets */,
-				B8822B1E24427FAD00ABA349 /* LaunchScreen.storyboard */,
 				B8822B2124427FAD00ABA349 /* Info.plist */,
-				B8822B1424427FAB00ABA349 /* SAParkFinder.xcdatamodeld */,
+				B8822B2B2442820C00ABA349 /* Models */,
+				B8E7A11D2442B5A4009AED9D /* Sessions */,
+				B8822B2A244281DA00ABA349 /* Views */,
+				B8822B2C2442821900ABA349 /* ViewModels */,
 				B8822B1B24427FAD00ABA349 /* Preview Content */,
 			);
 			path = SAParkFinder;
@@ -78,6 +147,77 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		B8822B2924427FE300ABA349 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B8E7A1202442B5F4009AED9D /* AppDelegate.swift */,
+				B8822B2724427FDC00ABA349 /* GoogleService-Info.plist */,
+				B8822B1E24427FAD00ABA349 /* LaunchScreen.storyboard */,
+				B8E7A1222442B603009AED9D /* SceneDelegate.swift */,
+				B8822B1424427FAB00ABA349 /* SAParkFinder.xcdatamodeld */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B8822B2A244281DA00ABA349 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B8E7A15F244BE882009AED9D /* HomeView.swift */,
+				B8147C832455D8F00076AFA0 /* Maps */,
+				B8E7A173244CF197009AED9D /* ParkDetailView.swift */,
+				B8E7A171244CF109009AED9D /* ParkListView.swift */,
+				B8822B56244296BF00ABA349 /* Supporting Views */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B8822B2B2442820C00ABA349 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B8E7A13A2444BB45009AED9D /* LocationManager.swift */,
+				B8E7A1362442BE70009AED9D /* Park.swift */,
+				B8E7A1172442B57F009AED9D /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B8822B2C2442821900ABA349 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B8E7A1562447853C009AED9D /* Supporting ViewModels */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B8822B56244296BF00ABA349 /* Supporting Views */ = {
+			isa = PBXGroup;
+			children = (
+				B8E7A169244CECD0009AED9D /* CircleImage.swift */,
+				B8147C7C24552D230076AFA0 /* ParkListRowView.swift */,
+				B8E7A168244CECD0009AED9D /* MapDetailView.swift */,
+				B8E7A163244BFBC2009AED9D /* ParkItemView.swift */,
+				B8E7A161244BF8B2009AED9D /* ParkHomeRowView.swift */,
+			);
+			path = "Supporting Views";
+			sourceTree = "<group>";
+		};
+		B8E7A11D2442B5A4009AED9D /* Sessions */ = {
+			isa = PBXGroup;
+			children = (
+				B8E7A15D244BD971009AED9D /* Constants.swift */,
+				B8E7A15B2448C9B1009AED9D /* FirebaseReference.swift */,
+				B8E7A165244CCAE8009AED9D /* ParkListener.swift */,
+			);
+			path = Sessions;
+			sourceTree = "<group>";
+		};
+		B8E7A1562447853C009AED9D /* Supporting ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Supporting ViewModels";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -85,15 +225,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B8822B2424427FAD00ABA349 /* Build configuration list for PBXNativeTarget "SAParkFinder" */;
 			buildPhases = (
+				65B73ED3D97AF39F6A9F58A8 /* [CP] Check Pods Manifest.lock */,
 				B8822B0924427FAB00ABA349 /* Sources */,
 				B8822B0A24427FAB00ABA349 /* Frameworks */,
 				B8822B0B24427FAB00ABA349 /* Resources */,
+				8454A7B20D7B621F6629AC6C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = SAParkFinder;
+			packageProductDependencies = (
+				B8E7A15024465F84009AED9D /* SDWebImageSwiftUI */,
+			);
 			productName = SAParkFinder;
 			productReference = B8822B0D24427FAB00ABA349 /* SAParkFinder.app */;
 			productType = "com.apple.product-type.application";
@@ -122,6 +267,9 @@
 				Base,
 			);
 			mainGroup = B8822B0424427FAB00ABA349;
+			packageReferences = (
+				B8E7A14F24465F84009AED9D /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = B8822B0E24427FAB00ABA349 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8822B2024427FAD00ABA349 /* LaunchScreen.storyboard in Resources */,
+				B8822B2824427FDC00ABA349 /* GoogleService-Info.plist in Resources */,
 				B8822B1D24427FAD00ABA349 /* Preview Assets.xcassets in Resources */,
 				B8822B1A24427FAD00ABA349 /* Assets.xcassets in Resources */,
 			);
@@ -144,15 +293,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		65B73ED3D97AF39F6A9F58A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SAParkFinder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8454A7B20D7B621F6629AC6C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SAParkFinder/Pods-SAParkFinder-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SAParkFinder/Pods-SAParkFinder-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SAParkFinder/Pods-SAParkFinder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B8822B0924427FAB00ABA349 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8822B1124427FAB00ABA349 /* AppDelegate.swift in Sources */,
-				B8822B1324427FAB00ABA349 /* SceneDelegate.swift in Sources */,
-				B8822B1824427FAB00ABA349 /* ContentView.swift in Sources */,
+				B8E7A15C2448C9B1009AED9D /* FirebaseReference.swift in Sources */,
+				B8E7A166244CCAE8009AED9D /* ParkListener.swift in Sources */,
+				B8E7A15E244BD971009AED9D /* Constants.swift in Sources */,
+				B8147C852455D90A0076AFA0 /* DirectionsView.swift in Sources */,
+				B8E7A162244BF8B2009AED9D /* ParkHomeRowView.swift in Sources */,
+				B8E7A160244BE882009AED9D /* HomeView.swift in Sources */,
+				B8E7A16C244CECD1009AED9D /* CircleImage.swift in Sources */,
+				B8E7A1392444BA80009AED9D /* MapView.swift in Sources */,
+				B8E7A1372442BE70009AED9D /* Park.swift in Sources */,
+				B8E7A1192442B580009AED9D /* User.swift in Sources */,
+				B8E7A172244CF109009AED9D /* ParkListView.swift in Sources */,
+				B8E7A164244BFBC2009AED9D /* ParkItemView.swift in Sources */,
+				B8E7A16B244CECD1009AED9D /* MapDetailView.swift in Sources */,
+				B8E7A174244CF197009AED9D /* ParkDetailView.swift in Sources */,
+				B8E7A1212442B5F5009AED9D /* AppDelegate.swift in Sources */,
+				B8E7A13B2444BB45009AED9D /* LocationManager.swift in Sources */,
 				B8822B1624427FAB00ABA349 /* SAParkFinder.xcdatamodeld in Sources */,
+				B8147C7D24552D230076AFA0 /* ParkListRowView.swift in Sources */,
+				B8E7A1232442B603009AED9D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +492,7 @@
 		};
 		B8822B2524427FAD00ABA349 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 921D85921B22B3C684925B0F /* Pods-SAParkFinder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -293,6 +500,7 @@
 				DEVELOPMENT_TEAM = LG3N8TKY59;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SAParkFinder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,6 +514,7 @@
 		};
 		B8822B2624427FAD00ABA349 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32C43193056D6DCF002D5633 /* Pods-SAParkFinder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -313,6 +522,7 @@
 				DEVELOPMENT_TEAM = LG3N8TKY59;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SAParkFinder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -346,6 +556,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B8E7A14F24465F84009AED9D /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B8E7A15024465F84009AED9D /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B8E7A14F24465F84009AED9D /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		B8822B1424427FAB00ABA349 /* SAParkFinder.xcdatamodeld */ = {
