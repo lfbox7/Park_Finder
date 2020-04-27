@@ -31,7 +31,7 @@ The following **additional** features are to be implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://recordit.co/TwGZCAF48Z' width=250>
+<img src='https://recordit.co/TwGZCAF48Z.gif' width=250>
 
 GIF created with [RecordIt](https://recordit.co).
 
