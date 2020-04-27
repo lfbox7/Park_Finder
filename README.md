@@ -29,14 +29,16 @@ The following **additional** features are to be implemented:
 
 ## APP Walkthrough GIF
 
-Here's a walkthrough of implemented user stories:
+Here's a walkthrough of implemented User Stories:
 
-<img src='https://recordit.co/TwGZCAF48Z.gif' width=250>
+<img src='https://recordit.co/IEudliF6T5.gif' width=250>
 
 GIF created with [RecordIt](https://recordit.co).
 
 ### Notes
 Directions link not in proper spot, moving it makes it inactive... Directions not working like if they were within the AppleMaps App, no ability to start or stop directions, follow Siri's voice, etc. Currently, route is a simple map overlay. Working on determining distance radius while running through all the park's coordinates from Firebase for a map and a list view.
+
+Since there are no APIs available, the database was created by searching each park's respective Webpage. There are still approximately 250 more parks to upload into Firebase.
 
 ### License
 
