@@ -12,7 +12,7 @@ The following functionality is completed:
 - [x] User can select a park from the home screen or list. 
 - [x] User can view the details of the park from the park detail screen.
 - [x] User can view the address, lat/lon, description and amenities of each park. 
-- [ ] User can get directions to a park from the park detail screen.
+- [x] User can get directions to a park from the park detail screen.
 - [ ] User can view parks within a 5 mile radius on a map from current location.
 - [ ] User can view parks within a 5 mile radius in a from current location ordered by distance.
 
@@ -35,7 +35,7 @@ Here's a walkthrough of implemented user stories:
 GIF created with [RecordIt](https://recordit.co/XBD7C26hlt.gif).
 
 ### Notes
-Working on posting and working with current location and properly ingesting coordinates from Firebase to create directions overlay. Current location needed to determine distance radius as well as properly ingesting those parks base on coordinates from Firebase for a map and a list view.
+Directions link not in proper spot, moving it makes it inactive... Directions not working like if they were within the AppleMaps App, no ability to start or stop directions, follow Siri's voice, etc. Currently, route is a simple map overlay. Current location needed to determine distance radius as well as properly ingesting those parks base on coordinates from Firebase for a map and a list view.
 
 ### License
 
