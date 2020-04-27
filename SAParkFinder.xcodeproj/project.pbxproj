@@ -10,6 +10,7 @@
 		207640387C6D797C9DD247F2 /* Pods_SAParkFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F483FE0A3BC79A6C08B4F3F7 /* Pods_SAParkFinder.framework */; };
 		B8147C7D24552D230076AFA0 /* ParkListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8147C7C24552D230076AFA0 /* ParkListRowView.swift */; };
 		B8147C852455D90A0076AFA0 /* DirectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8147C842455D90A0076AFA0 /* DirectionsView.swift */; };
+		B8147C872455FDFF0076AFA0 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8147C862455FDFF0076AFA0 /* LocationViewModel.swift */; };
 		B8822B1624427FAB00ABA349 /* SAParkFinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B8822B1424427FAB00ABA349 /* SAParkFinder.xcdatamodeld */; };
 		B8822B1A24427FAD00ABA349 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8822B1924427FAD00ABA349 /* Assets.xcassets */; };
 		B8822B1D24427FAD00ABA349 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8822B1C24427FAD00ABA349 /* Preview Assets.xcassets */; };
@@ -20,7 +21,6 @@
 		B8E7A1232442B603009AED9D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E7A1222442B603009AED9D /* SceneDelegate.swift */; };
 		B8E7A1372442BE70009AED9D /* Park.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E7A1362442BE70009AED9D /* Park.swift */; };
 		B8E7A1392444BA80009AED9D /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E7A1382444BA80009AED9D /* MapView.swift */; };
-		B8E7A13B2444BB45009AED9D /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E7A13A2444BB45009AED9D /* LocationManager.swift */; };
 		B8E7A15124465F84009AED9D /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = B8E7A15024465F84009AED9D /* SDWebImageSwiftUI */; };
 		B8E7A15C2448C9B1009AED9D /* FirebaseReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E7A15B2448C9B1009AED9D /* FirebaseReference.swift */; };
 		B8E7A15E244BD971009AED9D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E7A15D244BD971009AED9D /* Constants.swift */; };
@@ -40,6 +40,7 @@
 		B8147C7B245529840076AFA0 /* San Antonio.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "San Antonio.gpx"; sourceTree = "<group>"; };
 		B8147C7C24552D230076AFA0 /* ParkListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkListRowView.swift; sourceTree = "<group>"; };
 		B8147C842455D90A0076AFA0 /* DirectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionsView.swift; sourceTree = "<group>"; };
+		B8147C862455FDFF0076AFA0 /* LocationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
 		B8822B0D24427FAB00ABA349 /* SAParkFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SAParkFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8822B1524427FAB00ABA349 /* SAParkFinder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SAParkFinder.xcdatamodel; sourceTree = "<group>"; };
 		B8822B1924427FAD00ABA349 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -52,7 +53,6 @@
 		B8E7A1222442B603009AED9D /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B8E7A1362442BE70009AED9D /* Park.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Park.swift; sourceTree = "<group>"; };
 		B8E7A1382444BA80009AED9D /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		B8E7A13A2444BB45009AED9D /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		B8E7A15B2448C9B1009AED9D /* FirebaseReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseReference.swift; sourceTree = "<group>"; };
 		B8E7A15D244BD971009AED9D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B8E7A15F244BE882009AED9D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -174,7 +174,6 @@
 		B8822B2B2442820C00ABA349 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B8E7A13A2444BB45009AED9D /* LocationManager.swift */,
 				B8E7A1362442BE70009AED9D /* Park.swift */,
 				B8E7A1172442B57F009AED9D /* User.swift */,
 			);
@@ -184,6 +183,7 @@
 		B8822B2C2442821900ABA349 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				B8147C862455FDFF0076AFA0 /* LocationViewModel.swift */,
 				B8E7A1562447853C009AED9D /* Supporting ViewModels */,
 			);
 			path = ViewModels;
@@ -355,9 +355,9 @@
 				B8E7A16B244CECD1009AED9D /* MapDetailView.swift in Sources */,
 				B8E7A174244CF197009AED9D /* ParkDetailView.swift in Sources */,
 				B8E7A1212442B5F5009AED9D /* AppDelegate.swift in Sources */,
-				B8E7A13B2444BB45009AED9D /* LocationManager.swift in Sources */,
 				B8822B1624427FAB00ABA349 /* SAParkFinder.xcdatamodeld in Sources */,
 				B8147C7D24552D230076AFA0 /* ParkListRowView.swift in Sources */,
+				B8147C872455FDFF0076AFA0 /* LocationViewModel.swift in Sources */,
 				B8E7A1232442B603009AED9D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -24,11 +24,9 @@ struct ParkDetailView: View {
             MapDetailView(coordinate: coordinate)
                 .edgesIgnoringSafeArea(.top)
                 .frame(height: 300)
-            
             CircleImage(park: park)
                 .offset(x: 0, y: -150)
                 .padding(.bottom, -150)
-            
             VStack(alignment: .leading) {
                 Text(park.name)
                     .font(.title)
@@ -56,6 +54,18 @@ struct ParkDetailView: View {
                                 .font(.subheadline)
                         }
                     }
+                }
+                .padding(.bottom)
+                HStack {
+                    Spacer()
+                    NavigationLink(destination: DirectionsView(coordinate: coordinate, name: park.name)) {
+                        Text("Get Directions")
+                            
+                            .foregroundColor(.blue)
+                        
+                        
+                    }
+                    Spacer()
                 }
                 .padding(.bottom)
                 HStack {
@@ -281,17 +291,13 @@ struct ParkDetailView: View {
                 }
             }
             .padding()
-
+            
             Spacer()
         }
         .edgesIgnoringSafeArea(.top)
-        .navigationBarItems(trailing:
-            NavigationLink(destination: DirectionsMapView(coordinate: coordinate, name: park.name)) {
-                Text("Get Directions")
-            }
-        )
     }
 }
+
 
 struct ParkDetailView_Previews: PreviewProvider {
     static var previews: some View {

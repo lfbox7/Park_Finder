@@ -16,59 +16,68 @@ struct DirectionsMapView: View {
     
     var body: some View {
         DirectionsView(coordinate: coordinate, name: name)
+        .edgesIgnoringSafeArea(.all)
     }
 }
 
+struct DirectionsMapView_Previews: PreviewProvider {
+    static var previews: some View {
+        DirectionsMapView(coordinate: CLLocationCoordinate2D(latitude:  29.549316, longitude: -98.764715), name: "Government Canyon State Natural Area")
+    }
+}
 
 struct DirectionsView: UIViewRepresentable {
-    func makeCoordinator() -> Coordinator {
-        return DirectionsView.Coordinator()
-    }
-    
     var coordinate: CLLocationCoordinate2D
     var name: String
-    @ObservedObject var locationManager = LocationManager()
-    
+    @ObservedObject var locationViewModel = LocationViewModel()
+
     func makeUIView(context: UIViewRepresentableContext<DirectionsView>) -> MKMapView {
         let map = MKMapView()
-        let homeCoordinate = CLLocationCoordinate2D(latitude: locationManager.lastLocation?.coordinate.latitude ?? 0, longitude: locationManager.lastLocation?.coordinate.longitude ?? 0)
-        let destinationCoordinate = coordinate
+        map.showsUserLocation = true
+        map.userTrackingMode = .follow
+        let status = CLLocationManager.authorizationStatus()
+        print("Got here!")
         
+        if status == .authorizedAlways || status == .authorizedWhenInUse {
+            let homeCoordinate = CLLocationCoordinate2D(latitude: locationViewModel.currentLatitude, longitude: locationViewModel.currentLongitude)
+            let span = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
+            let region = MKCoordinateRegion(center: homeCoordinate, span: span)
+            map.setRegion(region, animated: true)
         
-        let region = MKCoordinateRegion(center: homeCoordinate, latitudinalMeters: 100000, longitudinalMeters: 100000)
-        
-        let sourcePin = MKPointAnnotation()
-        sourcePin.coordinate = homeCoordinate
-        sourcePin.title = "Home"
-        map.addAnnotation(sourcePin)
-        
-        let destinationPin = MKPointAnnotation()
-        destinationPin.coordinate = destinationCoordinate
-        destinationPin.title = name
-        map.addAnnotation(destinationPin)
-        
-        map.region = region
-        map.delegate = context.coordinator
-        
-        let req = MKDirections.Request()
-        req.source = MKMapItem(placemark: MKPlacemark(coordinate: homeCoordinate))
-        req.destination = MKMapItem(placemark: MKPlacemark(coordinate: destinationCoordinate))
-        
-        let directions = MKDirections(request: req)
-        directions.calculate { (direct, error) in
-            if error != nil {
-                print((error?.localizedDescription)!)
-                return
-            }
+            let destinationCoordinate = coordinate
+            print("Current location: \(homeCoordinate)")
+            print("Park location: \(destinationCoordinate)")
             
-            let polyline = direct?.routes.first?.polyline
-            map.addOverlay(polyline!)
-            map.setRegion(MKCoordinateRegion(polyline!.boundingMapRect), animated: true)
+            let destinationPin = MKPointAnnotation()
+            destinationPin.coordinate = destinationCoordinate
+            destinationPin.title = name
+            map.addAnnotation(destinationPin)
+            
+            map.delegate = context.coordinator
+            
+            let req = MKDirections.Request()
+            req.source = MKMapItem(placemark: MKPlacemark(coordinate: homeCoordinate))
+            req.destination = MKMapItem(placemark: MKPlacemark(coordinate: destinationCoordinate))
+            
+            let directions = MKDirections(request: req)
+            directions.calculate { (direct, error) in
+                guard let direct = direct else { return }
+                
+                let route = direct.routes[0]
+                map.addOverlay(route.polyline, level: .aboveRoads)
+                
+                let rect = route.polyline.boundingMapRect
+                map.setRegion(MKCoordinateRegion(rect), animated: true)
+            }
         }
         return map
     }
     
     func updateUIView(_ view: MKMapView, context: UIViewRepresentableContext<DirectionsView>) {
+    }
+    
+    func makeCoordinator() -> Coordinator {
+        return DirectionsView.Coordinator()
     }
     
     class Coordinator : NSObject, MKMapViewDelegate {
