@@ -19,8 +19,6 @@ The following functionality is completed:
 The following **additional** features are to be implemented:
 - [ ] User can view parks within a 5 mile radius on a map from current location.
 - [ ] User can view parks within a 5 mile radius in a from current location ordered by distance.
-
-
 - [ ] User can register for an account.
 - [ ] User can login.
 - [ ] User can create profile.
@@ -33,12 +31,12 @@ The following **additional** features are to be implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://recordit.co/xxx.gif' width=250>
+<img src='https://recordit.co/TwGZCAF48Z' width=250>
 
 GIF created with [RecordIt](https://recordit.co).
 
 ### Notes
-Directions link not in proper spot, moving it makes it inactive... Directions not working like if they were within the AppleMaps App, no ability to start or stop directions, follow Siri's voice, etc. Currently, route is a simple map overlay. Current location needed to determine distance radius as well as properly ingesting those parks base on coordinates from Firebase for a map and a list view.
+Directions link not in proper spot, moving it makes it inactive... Directions not working like if they were within the AppleMaps App, no ability to start or stop directions, follow Siri's voice, etc. Currently, route is a simple map overlay. Working on determining distance radius while running through all the park's coordinates from Firebase for a map and a list view.
 
 ### License
 
