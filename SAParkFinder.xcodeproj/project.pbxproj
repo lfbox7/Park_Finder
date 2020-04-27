@@ -11,6 +11,7 @@
 		B8147C7D24552D230076AFA0 /* ParkListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8147C7C24552D230076AFA0 /* ParkListRowView.swift */; };
 		B8147C852455D90A0076AFA0 /* DirectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8147C842455D90A0076AFA0 /* DirectionsView.swift */; };
 		B8147C872455FDFF0076AFA0 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8147C862455FDFF0076AFA0 /* LocationViewModel.swift */; };
+		B8147C8924571E050076AFA0 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8147C8824571E050076AFA0 /* MapViewModel.swift */; };
 		B8822B1624427FAB00ABA349 /* SAParkFinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B8822B1424427FAB00ABA349 /* SAParkFinder.xcdatamodeld */; };
 		B8822B1A24427FAD00ABA349 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8822B1924427FAD00ABA349 /* Assets.xcassets */; };
 		B8822B1D24427FAD00ABA349 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8822B1C24427FAD00ABA349 /* Preview Assets.xcassets */; };
@@ -41,6 +42,7 @@
 		B8147C7C24552D230076AFA0 /* ParkListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkListRowView.swift; sourceTree = "<group>"; };
 		B8147C842455D90A0076AFA0 /* DirectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionsView.swift; sourceTree = "<group>"; };
 		B8147C862455FDFF0076AFA0 /* LocationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
+		B8147C8824571E050076AFA0 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		B8822B0D24427FAB00ABA349 /* SAParkFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SAParkFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8822B1524427FAB00ABA349 /* SAParkFinder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SAParkFinder.xcdatamodel; sourceTree = "<group>"; };
 		B8822B1924427FAD00ABA349 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -184,7 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				B8147C862455FDFF0076AFA0 /* LocationViewModel.swift */,
-				B8E7A1562447853C009AED9D /* Supporting ViewModels */,
+				B8147C8824571E050076AFA0 /* MapViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -209,13 +211,6 @@
 				B8E7A165244CCAE8009AED9D /* ParkListener.swift */,
 			);
 			path = Sessions;
-			sourceTree = "<group>";
-		};
-		B8E7A1562447853C009AED9D /* Supporting ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Supporting ViewModels";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,6 +346,7 @@
 				B8E7A1372442BE70009AED9D /* Park.swift in Sources */,
 				B8E7A1192442B580009AED9D /* User.swift in Sources */,
 				B8E7A172244CF109009AED9D /* ParkListView.swift in Sources */,
+				B8147C8924571E050076AFA0 /* MapViewModel.swift in Sources */,
 				B8E7A164244BFBC2009AED9D /* ParkItemView.swift in Sources */,
 				B8E7A16B244CECD1009AED9D /* MapDetailView.swift in Sources */,
 				B8E7A174244CF197009AED9D /* ParkDetailView.swift in Sources */,

@@ -30,9 +30,9 @@ struct HomeView: View {
                     //code
                     print("logout")
                 }, label: {
-                    Text("Logout")
+                    Text("")
                 })
-                , trailing:
+                ,trailing:
                 NavigationLink(destination: ParkListView()) {
                     Text("List")
                 }
