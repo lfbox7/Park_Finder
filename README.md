@@ -13,29 +13,32 @@ The following functionality is completed:
 - [x] User can view the details of the park from the park detail screen.
 - [x] User can view the address, lat/lon, description and amenities of each park. 
 - [x] User can get directions to a park from the park detail screen.
-- [ ] User can view parks within a 5 mile radius on a map from current location.
-- [ ] User can view parks within a 5 mile radius in a from current location ordered by distance.
 
 ## Additional
 
 The following **additional** features are to be implemented:
+- [ ] User can view parks within a 5 mile radius on a map from current location.
+- [ ] User can view parks within a 5 mile radius in a from current location ordered by distance.
 - [ ] User can register for an account.
 - [ ] User can login.
 - [ ] User can create profile.
+- [ ] User can mark parks as visited.
 - [ ] User can rate parks.
 - [ ] User can add a new comments to parks.
 - [ ] User can view comments on a park.
 
 ## APP Walkthrough GIF
 
-Here's a walkthrough of implemented user stories:
+Here's a walkthrough of implemented User Stories:
 
-<img src='https://recordit.co/xxx.gif' width=250>
+<img src='https://recordit.co/IEudliF6T5.gif' width=250>
 
-GIF created with [RecordIt](https://recordit.co/XBD7C26hlt.gif).
+GIF created with [RecordIt](https://recordit.co).
 
 ### Notes
-Directions link not in proper spot, moving it makes it inactive... Directions not working like if they were within the AppleMaps App, no ability to start or stop directions, follow Siri's voice, etc. Currently, route is a simple map overlay. Current location needed to determine distance radius as well as properly ingesting those parks base on coordinates from Firebase for a map and a list view.
+Directions link not in proper spot, moving it makes it inactive... Directions not working like if they were within the AppleMaps App, no ability to start or stop directions, follow Siri's voice, etc. Currently, route is a simple map overlay. Working on determining distance radius while running through all the park's coordinates from Firebase for a map and a list view.
+
+Since there are no APIs available, the database was created by searching each park's respective Webpage. There are still approximately 250 more parks to upload into Firebase.
 
 ### License
 
